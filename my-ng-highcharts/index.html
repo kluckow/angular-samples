@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="chartApp">
+<head>
+<meta charset="UTF-8">
+<title>My ng-Highcharts</title>
+<link rel="stylesheet" href="res/css/bootstrap.min.css">
+<link rel="stylesheet" href="res/css/my-app.css">
+<link rel="shortcut icon" href="res/img/favicon.ico" type="image/png" />
+<link rel="icon" href="res/img/favicon.ico" type="image/png" />
+</head>
+<body>
+
+	<div class="row container-fluid" ng-controller="HighchartCtrl as highchartCtrl">
+	
+		<!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<h2>Highcharts - Simple Bar Chart</h2>
+			<div id="highchartSimpleBar" width="250" height="250"></div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<h2>Highcharts - Line Chart</h2>
+			<div id="highchartLine" width="250" height="250"></div>
+		</div> -->
+		<!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<h2>Highcharts - Simple Bar Chart</h2>
+			<highchart id="bar" chartData="chartData"></highchart>
+		</div> -->
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<high-chart style="width: inherit" data="chartData"></high-chart>
+		</div>
+		<!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<h2>Highcharts - Variable Chart Type</h2>
+			<highchart id="line" chartData="chartData"></highchart>
+		</div> -->
+		
+		
+	</div>
+
+<script src="res/js/jquery.min.js"></script>
+<script src="res/js/bootstrap.min.js"></script>
+<script src="res/js/angular.min.js"></script>
+<script src="res/js/highcharts.js"></script>
+<script src="res/js/highcharts-more.js"></script>
+<!-- LOCALE -->
+<script src="res/js/i18n/angular-locale_de-de.js"></script>
+<!-- Main App Module -->
+<script src="app/app.js"></script>
+<script src="app/directive/directive.highcharts.js"></script>
+</body>
+</html>
